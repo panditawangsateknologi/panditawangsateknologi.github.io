@@ -1,0 +1,25 @@
+[project]
+name = Pandita Wangsa Teknologi
+url = https://panditawangsateknologi.biz.id/
+url_style = relative
+
+[servers.ghpages]
+enabled = yes
+name = Github pages on repo
+target = ghpages://panditawangsateknologi/panditawangsateknologi.website?cname=panditawangsateknologi.biz.id
+default = yes
+
+[servers.ghpages-https]
+enabled = yes
+name = Github pages on repo
+target = ghpages+https://panditawangsateknologi/panditawangsateknologi.website?cname=panditawangsateknologi.biz.id
+default = not
+
+[packages]
+lektor-git-timestamp = 1.0.0
+lektor-markdown-header-anchors = 0.3.1
+lektor-markdown-highlighter = 0.3.2
+lektor-markdown-admonition = 0.3.1
+lektor-atom = 0.4.0
+lektor-tags = 0.5.2
+lektor-slugify = 0.4
