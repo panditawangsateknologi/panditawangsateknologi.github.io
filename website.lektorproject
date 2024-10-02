@@ -17,7 +17,6 @@ default = not
 
 [packages]
 lektor-git-timestamp = 1.0.0
-lektor-markdown-header-anchors = 0.3.1
 lektor-markdown-highlighter = 0.3.2
 lektor-markdown-admonition = 0.3.1
 lektor-atom = 0.4.0
