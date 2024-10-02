@@ -16,7 +16,6 @@ target = ghpages+https://panditawangsateknologi/panditawangsateknologi.website?c
 default = not
 
 [packages]
-lektor-webpack-support = 0.6.0
 lektor-git-timestamp = 1.0.0
 lektor-markdown-header-anchors = 0.3.1
 lektor-markdown-highlighter = 0.3.2
