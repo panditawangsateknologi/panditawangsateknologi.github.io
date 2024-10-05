@@ -1,12 +1,38 @@
-title: Welcome to panditawangsateknologi.website!
+_model: homepage
 ---
-body:
-
-# Pandita Wangsa Teknologi
+title: Hemat waktu dan biaya, solusi bagi Anda.
+---
+lead_homepage:
 
 Pandita Wangsa Teknologi adalah perusahaan yang bergerak di bidang jasa dan/atau layanan dalam bidang teknologi listrik dan elektronik di Kudus, Pati, Jepara, Demak, dan kota-kota sekitarnya.
-
-## Instalasi Alat Kantor
+---
+whatsapp_title: WhatsApp
+---
+whatsapp_link: http://wa.me/628157677177
+---
+phone_title: Telepon
+---
+phone_link: tel:+6185660693189
+---
+first_image_link: /static/electric-1.jpg
+---
+first_image_alt: Kami membeli limbah elektronik kantor.
+---
+second_image_link: /static/computer-1.jpg
+---
+second_image_alt: Kami membeli limbah elektronik kantor.
+---
+third_image_link: /static/battery-1.jpg
+---
+third_image_alt: Kami membeli limbah elektronik kantor.
+---
+fourth_image_link: /static/battery-2.jpgg
+---
+fourth_image_alt: Kami membeli limbah elektronik kantor.
+---
+first_service_title: Instalasi
+---
+first_service_body:
 
 Terdapat beberapa jasa pengadaan barang yang disediakan Pandita Wangsa Teknologi untuk instansi dan/atau perorangan, seperti:
 
@@ -15,10 +41,16 @@ Terdapat beberapa jasa pengadaan barang yang disediakan Pandita Wangsa Teknologi
 - Instalasi baterai/aki *Uninterruptible Power Supply* (UPS).
 - Instalasi jaringan internet
 - Instalasi komputer user dan server
+---
+first_service_text: Sewa kami sekarang
+---
+first_service_link: /sewa
+---
+second_service_title: Lelang Limbah/Barang Bekas
+---
+second_service_body:
 
-## Pembelian Barang Bekas
-
-Selain itu, kami juga melayani pembelian barang lelang instansi/perkantoran, seperti:
+Selain itu, kami juga melayani penjualan barang lelang instansi/perkantoran, seperti:
 
 - Baterai/aki bekas perkantoran/instansi
 - Komputer/laptop bekas perkantoran
@@ -27,13 +59,29 @@ Selain itu, kami juga melayani pembelian barang lelang instansi/perkantoran, sep
 - Genset
 - Limbah/rongsok elektronik lainnya
 - Limbah/rongsok metal (alumunium, kuningan, tembaga, timah, dsb)
+---
+second_service_text: Jual kepada kami
+---
+second_service_link: /jual
+---
+third_service_title: Kerjasama dengan Kami?
+---
+third_service_body:
 
-Kami akan berusaha memberi penawaran harga yang bersaing dengan kompetitor lain.
+Jika Anda memiliki proyek dan ingin bekerjasama dengan kami, tentu kami dengan tangan terbuka membuka peluang.
 
-Segera hubungi kami untuk mendapatkan dan/atau memberi penawaran dari dan kepada kami.
+Kami akan mempertimbangkan untuk menerimanya jika memiliki kebermanfaatan untuk beberapa pihak yang saling bekerjasama.
 
-Hubungi kami melalui kontak berikut:
+Mari saling memperluas jaringan pekerjaan.
+---
+third_service_text: Tawarkan proyek kepada kami
+---
+third_service_body: /proyek
+---
+body:
 
-08157677177 http://wa.me/628157677177
+Halo, dunia!
+---
+kicker_homepage:
 
-085660693189  http://wa.me/6285660693189
+Kami akan berusaha memberi penawaran harga yang bersaing dengan kompetitor lain. Segera hubungi kami untuk mendapatkan dan/atau memberi penawaran dari dan kepada kami.

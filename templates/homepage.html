@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ this.title }}{% endblock %}
+
+{% block body %}
+
+
+  <section class="container my-md-5 p-4 pt-md-5 py-0 text-center">
+    <h1 class="display-4 mb-4">{{ this.title }}</h1>
+    <div class="col-lg-7 mx-auto">
+      <p class="lead mb-5">{{ this.lead_homepage }}</p>
+      <div class="d-flex gap-4 justify-content-center mb-5">
+        <a class="btn btn-lg btn-success d-inline-flex gap-1" href="{{ this.whatsapp_link }}" target="_blank">
+          <i class="bi bi-whatsapp me-2"></i>
+          <span>{{ this.whatsapp_title }}</span>
+        </a>
+        <a class="btn btn-lg btn-dark d-inline-flex gap-1" href="{{ this.phone_link }}" target="_blank">
+          <i class="bi bi-telephone me-2"></i>
+          <span>{{ this.phone_title }}</span>
+        </a>
+      </div>
+    </div>
+    <div class="carousel carousel-fade slide" data-bs-ride="carousel" id="carousel">
+      <div class="carousel-inner">
+        <div class="active carousel-item">
+          <div class="container p-0">
+            <img alt="{{ this.first_image_alt }}" class="d-block img-fluid mx-auto my-4 rounded shadow" height="576" src="{{ this.first_image_link }}" width="1024">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container p-0">
+            <img alt="{{ this.second_image_alt }}" class="d-block img-fluid mx-auto my-4 rounded shadow" height="576" src="{{ this.second_image_link }}" width="1024">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container p-0">
+            <img alt="{{ this.third_image_alt }}" class="d-block img-fluid mx-auto my-4 rounded shadow" height="576" src="{{ this.third_image_link }}" width="1024">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container p-0">
+            <img alt="{{ this.fourth_image_alt }}" class="d-block img-fluid mx-auto my-4 rounded shadow" height="576" src="{{ this.third_image_link }}" width="1024">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container my-md-5 p-4 py-md-0">
+    <div class="gx-5 row">
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <h2 class="fw-bolder h4">{{ this.first_service_title }}</h2>
+        {{ this.first_service_body }}
+        <a class="icon-link icon-link-hover" href="{{ this.first_service_link }}">
+          {{ this.first_service_text }} <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <h2 class="fw-bolder h4">{{ this.second_service_title }}</h2>
+        {{ this.second_service_body }}
+        <a class="icon-link icon-link-hover" href="{{ this.second_service_link }}">
+          {{ this.second_service_text }} <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <h2 class="fw-bolder h4">{{ this.third_service_title }}</h2>
+        {{ this.third_service_body }}
+        <a class="icon-link icon-link-hover" href="{{ this.third_service_link }}">
+          {{ this.third_service_text }} <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="container my-md-5 p-4 py-md-0">
+    <p class="col-lg-8 lead mx-auto text-center">{{ this.kicker_homepage }}</p>
+  </section>
+
+  <section class="container my-md-5 p-4 py-md-0">
+    <div class="d-flex gap-4 justify-content-center mb-5">
+      <a class="btn btn-lg btn-success d-inline-flex gap-1" href="{{ this.whatsapp_link }}" target="_blank">
+        <i class="bi bi-whatsapp me-2"></i>
+        <span>{{ this.whatsapp_title }}</span>
+      </a>
+      <a class="btn btn-lg btn-dark d-inline-flex gap-1" href="{{ this.phone_link }}" target="_blank">
+        <i class="bi bi-telephone me-2"></i>
+        <span>{{ this.phone_title }}</span>
+      </a>
+      <a class="btn btn-lg btn-primary d-inline-flex gap-1" data-bs-target="#modal-get" data-bs-toggle="modal" href="#" id="actor-get">
+        <i class="bi bi-envelope-paper me-2"></i>
+        <span>Surat Elektronik</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- {{ this.body }} -->
+{% endblock %}

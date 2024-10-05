@@ -1,32 +1,201 @@
 <!doctype html>
 <meta charset="utf-8">
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="{{ '/static/style.css'|asseturl }}">
 <title>{% block title %}Welcome{% endblock %} — Pandita Wangsa Teknologi</title>
-<body>
-  <header>
-    <h1>Pandita Wangsa Teknologi</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/projects', 'Projects'],
-          ['/about', 'About']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
+<link href="https://fonts.googleapis.com/css?display=swap&amp;family=IBM+Plex+Mono:300,400,600,300i,400i,600i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?display=swap&amp;family=IBM+Plex+Sans:300,400,600,300i,400i,600i" rel="stylesheet">
+<link href="{{ '/static/toc.css'|asseturl }}" rel="stylesheet">
+<link href="{{ '/static/comment.css'|asseturl }}" rel="stylesheet">
+<link href="{{ '/static/site.css'|asseturl }}" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+  .autors-widget+address,
+  .autors-widget+article,
+  .autors-widget+aside,
+  .autors-widget+blockquote,
+  .autors-widget+details,
+  .autors-widget+div,
+  .autors-widget+dl,
+  .autors-widget+dt,
+  .autors-widget+fieldset,
+  .autors-widget+figure,
+  .autors-widget+footer,
+  .autors-widget+form,
+  .autors-widget+h1,
+  .autors-widget+h2,
+  .autors-widget+h3,
+  .autors-widget+h4,
+  .autors-widget+h5,
+  .autors-widget+h6,
+  .autors-widget+header,
+  .autors-widget+hr,
+  .autors-widget+main,
+  .autors-widget+nav,
+  .autors-widget+ol,
+  .autors-widget+p,
+  .autors-widget+pre,
+  .autors-widget+section,
+  .autors-widget+table,
+  .autors-widget+ul {
+    margin-top: 1.5rem;
+  }
+
+  .google-auto-placed+address,
+  .google-auto-placed+article,
+  .google-auto-placed+aside,
+  .google-auto-placed+blockquote,
+  .google-auto-placed+details,
+  .google-auto-placed+div,
+  .google-auto-placed+dl,
+  .google-auto-placed+dt,
+  .google-auto-placed+fieldset,
+  .google-auto-placed+figure,
+  .google-auto-placed+footer,
+  .google-auto-placed+form,
+  .google-auto-placed+h1,
+  .google-auto-placed+h2,
+  .google-auto-placed+h3,
+  .google-auto-placed+h4,
+  .google-auto-placed+h5,
+  .google-auto-placed+h6,
+  .google-auto-placed+header,
+  .google-auto-placed+hr,
+  .google-auto-placed+main,
+  .google-auto-placed+nav,
+  .google-auto-placed+ol,
+  .google-auto-placed+p,
+  .google-auto-placed+pre,
+  .google-auto-placed+section,
+  .google-auto-placed+table,
+  .google-auto-placed+ul {
+    margin-top: 1.5rem;
+  }
+
+  *+.autors-widget {
+    margin-top: 1.5rem;
+  }
+
+  *+.google-auto-placed {
+    margin-top: 1.5rem;
+  }
+
+  header.mb-4+.google-auto-placed {
+    margin-top: -1.5rem;
+  }
+
+  header.mb-4+.google-auto-placed+.mb-4 {
+    margin-top: 2rem;
+  }
+  </style>
+  <style>
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  code,
+  textarea {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  </style>
+<body class="min-vh-100 d-flex flex-column">
+  <header class="p-4">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a class="align-items-center d-flex me-auto text-dark" href="/">
+        <svg aria-hidden="true" width="40" height="40" viewBox="0 0 10.583333 10.583333" version="1.1" id="svg3290" inkscape:version="1.2.2 (b0a8486541, 2022-12-01)" sodipodi:docname="pwt-40x40.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+          <sodipodi:namedview id="namedview3292" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:document-units="px" showgrid="false" inkscape:zoom="5.3115544" inkscape:cx="36.430014" inkscape:cy="34.076654" inkscape:window-width="1366" inkscape:window-height="699" inkscape:window-x="0" inkscape:window-y="32" inkscape:window-maximized="1" inkscape:current-layer="layer1" />
+          <defs id="defs3287" />
+          <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
+            <g id="g3274" style="font-weight:700;font-size:113.855px;font-family:'Cairo Play';-inkscape-font-specification:'Cairo Play Bold';text-align:center;text-anchor:middle;fill:#202c36;stroke-width:3.0497" transform="matrix(0.06191546,0,0,0.06191546,-3.9027793,-1.2094568)">
+              <rect style="fill:#343a40;fill-opacity:1;stroke-width:1.82167" id="rect551" width="170.93201" height="170.93201" x="63.033997" y="19.533997" />
+              <g id="g3244" transform="translate(1.5875105)">
+                <path d="m 111.13524,60.582215 q 7.78997,0 10.93591,3.295754 3.29576,3.145948 3.29576,10.935914 v 47.638637 q 0,7.78997 -3.29576,11.08572 -3.14594,3.14596 -10.93591,3.14596 H 96.903516 q -4.34442,0 -6.29192,-2.0973 -1.797682,-2.24712 -2.696524,-6.59151 v 34.75523 q 0,2.39691 -0.898842,3.14594 -0.749035,0.89884 -3.145948,0.89884 H 75.930509 V 64.627005 q 0,-2.396913 0.749035,-3.145948 0.898842,-0.898842 3.295755,-0.898842 h 7.939773 v 67.413175 h 18.426348 q 4.64401,0 5.84247,-1.9475 1.19845,-1.94749 1.19845,-6.59151 V 77.810024 q 0,-4.644018 -1.19845,-6.59151 -1.19846,-1.947491 -5.84247,-1.947491 H 93.907362 v -4.644018 q 0,-2.396913 0.599228,-3.145948 0.749042,-0.898842 3.145967,-0.898842 z" style="font-weight:700;font-size:113.855px;font-family:'Cairo Play';-inkscape-font-specification:Rationale;text-align:center;text-anchor:middle;fill:#fe000d;fill-opacity:1;stroke-width:4.0127" id="path355" />
+                <path d="m 180.95031,132.93901 q -0.29961,1.79769 -1.04866,2.84634 -0.74902,0.89885 -2.69652,0.89885 h -11.08572 l -7.78997,-31.15987 -4.3444,-19.175305 h -0.89884 l -4.49421,19.175305 -7.19074,27.26488 q -0.74904,2.2471 -1.79768,3.14594 -1.04866,0.74905 -2.84634,0.74905 h -10.4865 L 113.53714,63.578355 q -0.44942,-2.99614 2.2471,-2.99614 h 8.2394 l 10.03706,65.915105 h 1.04866 l 11.98456,-45.241734 q 0.74903,-2.54672 3.29575,-2.696527 h 9.88727 l 11.83475,47.938261 h 0.59923 l 9.43785,-62.918965 q 0.29961,-1.797684 1.04864,-2.396912 0.89884,-0.599228 2.69653,-0.599228 h 7.04093 z" style="font-weight:700;font-size:113.855px;font-family:'Cairo Play';-inkscape-font-specification:Rationale;text-align:center;text-anchor:middle;fill:#418413;fill-opacity:1;stroke-width:4.0127" id="path357" />
+                <path d="m 212.50142,60.582215 q 2.39691,0 2.99614,0.898842 0.74904,0.749035 0.74904,3.145948 v 4.644018 h -18.42627 v 50.185357 q 0,4.64402 1.19846,6.59151 1.19845,1.9475 5.84248,1.9475 h 13.0332 q -0.29961,4.34439 -1.79768,6.59151 -1.34826,2.0973 -5.69267,2.0973 h -10.33668 q -7.78997,0 -11.08572,-3.14596 -3.14595,-3.29575 -3.14595,-11.08572 V 47.249388 q 0,-2.396914 0.74904,-3.145949 0.89884,-0.898842 3.29575,-0.898842 h 7.93977 v 17.377618 z" style="font-weight:700;font-size:113.855px;font-family:'Cairo Play';-inkscape-font-specification:Rationale;text-align:center;text-anchor:middle;fill:#ffc001;fill-opacity:1;stroke-width:4.0127" id="path359" />
+              </g>
+            </g>
+          </g>
+        </svg>
+        <span class="fs-4 ms-3">
+          Pandita Wangsa Teknologi
+        </span>
+      </a>
+      <div class="navbar navbar-expand py-0">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="d-inline-flex gap-2 nav-link" data-bs-target="#modal-get" data-bs-toggle="modal" href="#" id="actor-get">
+                <i aria-hidden="true" class="bi bi-envelope-paper"></i>
+                <span>Hubungi Kami</span>
+              </a>
+            </li>
+          </ul>
+<!--
+        <ul class="navbar-nav">
+          <li{% if this._path == '/' %} class="nav-item"{% endif
+            %}><i aria-hidden="true" class="bi bi-person"></i><a class="d-inline-flex gap-2 nav-link" href="{{ '/'|url }}">Welcome</a></li>
+          {% for href, title in [
+            ['/blog', 'Blog'],
+            ['/projects', 'Projects'],
+            ['/about', 'About']
+          ] %}
+            <li{% if this.is_child_of(href) %} class="active"{% endif
+              %}><a href="{{ href|url }}">{{ title }}</a></li>
+          {% endfor %}
+        </ul>
+-->
+      </div>
+    </div>
   </header>
-  <div class="page">
-    {% block body %}{% endblock %}
-  </div>
-  <footer>
-    &copy; Copyright 2024 by Pandita Wangsa Teknologi.
+  {% block body %}{% endblock %}
+  <footer class="py-5 text-muted">
+    <div class="container text-center">
+      &copy; 2024 <a href="/">Pandita Wangsa Teknologi</a>
+    </div>
   </footer>
+  <div aria-hidden="true" aria-labelledby="modal-get-title" class="fade modal" id="modal-get" tabindex="-1">
+    <form class="modal-dialog modal-dialog-centered modal-dialog-scrollable" action="https://docs.google.com/forms/d/e/1FAIpQLSd1-3fF8C5l9kIFmVKHpIDKU_ezSD0wB2dS3jT2LXCUQBBl9g/formResponse" target="_self" id="pwt-google-form" method="POST">
+      <div class="modal-content shadow">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-get-title">Hubungi Kami</h5>
+          <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            <label class="form-label" for="577923172">Nama</label>
+            <input class="form-control" id="361015603" name="entry.361015603" type="text" required>
+            <span class="d-block form-text">Isi nama lengkap Anda.</span>
+          </p>
+          <p>
+            <label class="form-label" for="778136470">Email</label>
+            <input class="form-control" id="868459215" name="entry.868459215" type="email" required>
+            <span class="d-block form-text">Isi email Anda.</span>
+          </p>
+          <p>
+            <label class="form-label" for="1766646220">Nomor Telepon/WhatsApp</label>
+            <input class="form-control" id="519833410" name="entry.519833410" type="number" required>
+            <span class="d-block form-text">Isi kontak Anda.</span>
+          </p>
+          <p>
+            <label class="form-label" for="1589426216">Pesan</label>
+            <textarea class="form-control" id="1183294776" name="entry.1183294776" rows="7" required></textarea>
+            <span class="d-block form-text">Tulis pesan yang ingin Anda utarakan.</span>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary d-inline-flex gap-2" type="submit">
+            <i class="bi bi-send"></i>
+            <span>Kirim</span>
+          </button>
+        </div>
+        <input type="hidden" name="fvv" value="1">
+        <input type="hidden" name="fbzx" value="-2377182253906743615">
+        <input type="hidden" name="pageHistory" value="0">
+      </div>
+    </form>
+  </div>
+  <script src="{{ '/static/comment.js'|asseturl }}"></script>
+  <script src="{{ '/static/site.js'|asseturl }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+  <script src="{{ '/static/google-form.js'|asseturl }}"></script>
 </body>
