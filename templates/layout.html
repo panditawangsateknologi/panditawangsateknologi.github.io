@@ -4,14 +4,15 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="robots" content="noimageai">
 <meta name="robots" content="noai">
-<title>{% block title %}Welcome{% endblock %} — Pandita Wangsa Teknologi</title>
+<title>{% block title %}Welcome{% endblock %} — {{ name }}</title>
 <meta name="description" content="{{ this.description }}">
+<link rel="canonical" href="{{ '.'|url }}">
 <meta name="author" content="Pandita Wangsa Teknologi">
 <link rel="me" href="mailto:panditawangsateknologi@gmail.com">
 <link rel="me" href="sms:+628157677177">
 <meta name="robots" content="index,follow">
-<link href="favicon.ico" rel="icon">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ '/static//apple-touch-icon.png'|asseturl }}">
+<link href="{{ 'favicon.ico'|asseturl }}" rel="icon">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/static/apple-touch-icon.png'|asseturl }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/static/favicon-32x32.png'|asseturl }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ '/static/favicon-16x16.png'|asseturl }}">
 <link rel="manifest" href="{{ '/static/site.webmanifest'|asseturl }}">
