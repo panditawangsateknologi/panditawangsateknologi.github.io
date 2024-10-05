@@ -1,10 +1,10 @@
 _model: homepage
 ---
-title: Hemat waktu dan biaya, solusi bagi Anda.
+title: Jual-Beli Aki/Accu/Baterai & Lelang Barang Bekas Kantor
 ---
-lead_homepage:
-
-Pandita Wangsa Teknologi adalah perusahaan yang bergerak di bidang jasa dan/atau layanan dalam bidang teknologi listrik dan elektronik di Kudus, Pati, Jepara, Demak, dan kota-kota sekitarnya.
+lead_homepage_title: Hemat waktu dan biaya, solusi bagi Anda.
+---
+lead_homepage_body: <strong>Pandita Wangsa Teknologi</strong> adalah perusahaan yang bergerak di bidang jasa dan/atau layanan dalam bidang teknologi listrik dan elektronik di Kudus, Pati, Jepara, Demak, dan kota-kota sekitarnya.
 ---
 whatsapp_title: WhatsApp
 ---
@@ -14,37 +14,45 @@ phone_title: Telepon
 ---
 phone_link: tel:+6185660693189
 ---
-first_image_link: /static/electric-1.jpg
+first_image_link: /static/battery-1.jpg
 ---
 first_image_alt: Kami membeli limbah elektronik kantor.
 ---
-second_image_link: /static/computer-1.jpg
+second_image_link: /static/barang-bekas-1.jpg
 ---
 second_image_alt: Kami membeli limbah elektronik kantor.
 ---
-third_image_link: /static/battery-1.jpg
+third_image_link: static/computer-1.jpg
 ---
 third_image_alt: Kami membeli limbah elektronik kantor.
 ---
-fourth_image_link: /static/battery-2.jpgg
+fourth_image_link: /static/electric-1.jpg
 ---
 fourth_image_alt: Kami membeli limbah elektronik kantor.
 ---
-first_service_title: Instalasi
+figcaption_title: Jual Accu/Aki Bekas Anda kepada Kami
+---
+figcaption_body:
+
+Kami berkenan terima dan membeli baterai/accu/aki bekas segala kondisi dengan harga bersaing dengan kompetitor. Kami dapat menjemput ke lokasi/rumah/kantor Anda. Silakan hubungi WhatApps kami untuk kerjasama.
+
+Selain itu, kami memiliki beberapa layanan lain, seperti berikut di bawah ini.
+---
+first_service_title: Pengadaan & Instalasi
 ---
 first_service_body:
 
 Terdapat beberapa jasa pengadaan barang yang disediakan Pandita Wangsa Teknologi untuk instansi dan/atau perorangan, seperti:
 
-- Instalasi listrik PLN
-- Instalasi pembangkit listrik tenaga surya (PLTS)
-- Instalasi baterai/aki *Uninterruptible Power Supply* (UPS).
-- Instalasi jaringan internet
-- Instalasi komputer user dan server
+- Pengadaan & Instalasi listrik PLN
+- Pengadaan & Instalasi pembangkit listrik tenaga surya (PLTS)
+- Pengadaan & Instalasi baterai/aki *Uninterruptible Power Supply* (UPS).
+- Pengadaan & Instalasi jaringan internet
+- Pengadaan & Instalasi komputer user dan server
 ---
 first_service_text: Sewa kami sekarang
 ---
-first_service_link: /sewa
+first_service_link: /layanan/sewa
 ---
 second_service_title: Lelang Limbah/Barang Bekas
 ---
@@ -62,7 +70,7 @@ Selain itu, kami juga melayani penjualan barang lelang instansi/perkantoran, sep
 ---
 second_service_text: Jual kepada kami
 ---
-second_service_link: /jual
+second_service_link: /layanan/jual
 ---
 third_service_title: Kerjasama dengan Kami?
 ---
@@ -72,16 +80,20 @@ Jika Anda memiliki proyek dan ingin bekerjasama dengan kami, tentu kami dengan t
 
 Kami akan mempertimbangkan untuk menerimanya jika memiliki kebermanfaatan untuk beberapa pihak yang saling bekerjasama.
 
-Mari saling memperluas jaringan pekerjaan.
+Mari saling memperluas jaringan pekerjaan dengan kami.
 ---
 third_service_text: Tawarkan proyek kepada kami
 ---
-third_service_body: /proyek
+third_service_link: /proyek
 ---
-body:
-
-Halo, dunia!
+kicker_homepage_title: Pandita Wangsa Teknologi
 ---
-kicker_homepage:
+kicker_homepage_body:
 
 Kami akan berusaha memberi penawaran harga yang bersaing dengan kompetitor lain. Segera hubungi kami untuk mendapatkan dan/atau memberi penawaran dari dan kepada kami.
+
+Hubungi kami via:
+---
+body: 
+
+Pandita Wangsa Teknologi
