@@ -7,7 +7,10 @@
   <section class="container my-md-5 p-4 pt-md-5 py-0 text-center">
     <h1 class="display-4 mb-4">{{ this.lead_homepage_title }}</h1>
     <div class="col-lg-7 mx-auto">
-      <p class="lead mb-5">{{ this.lead_homepage_body }}</p>
+      <p class="lead mb-5">
+        {{ this.lead_homepage_body }}
+        <a class="icon-link icon-link-hover" href="{{ this.about_link|url }}">{{ this.about_text }} <i class="bi bi-arrow-right"></i></a>
+      </p>
       <div class="d-flex gap-4 justify-content-center mb-5">
         <a class="btn btn-lg btn-success d-inline-flex gap-1" href="{{ this.whatsapp_link }}" target="_blank">
           <i class="bi bi-whatsapp me-2"></i>

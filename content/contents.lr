@@ -10,6 +10,10 @@ lead_homepage_title: Hemat waktu dan biaya, solusi bagi Anda.
 ---
 lead_homepage_body: <strong>Pandita Wangsa Teknologi</strong> adalah perusahaan yang bergerak di bidang jasa dan/atau layanan dalam bidang teknologi listrik dan elektronik di Kudus, Pati, Jepara, Demak, dan kota-kota sekitarnya.
 ---
+about_text: Lebih dekat dengan kami
+---
+about_link: /tentang
+---
 whatsapp_title: WhatsApp
 ---
 whatsapp_link: https://wa.me/628157677177?text=https%3A%2F%2Fpanditawangsateknologi.biz.id%2F%0A%0AHalo,%20saya%20ingin%20menawarkan%20barang%20kepada%20Anda
@@ -56,7 +60,7 @@ Terdapat beberapa jasa pengadaan barang yang disediakan Pandita Wangsa Teknologi
 ---
 first_service_text: Sewa kami sekarang
 ---
-first_service_link: /layanan/sewa
+first_service_link: /layanan/pengadaan-instalasi
 ---
 second_service_title: Lelang Limbah/Barang Bekas
 ---
@@ -74,7 +78,7 @@ Selain itu, kami juga melayani penjualan barang lelang instansi/perkantoran, sep
 ---
 second_service_text: Jual kepada kami
 ---
-second_service_link: /layanan/jual
+second_service_link: /layanan/lelang-jual
 ---
 third_service_title: Kerjasama dengan Kami?
 ---
@@ -88,7 +92,7 @@ Mari saling memperluas jaringan pekerjaan dengan kami.
 ---
 third_service_text: Tawarkan proyek kepada kami
 ---
-third_service_link: /proyek
+third_service_link: /layanan/kerjasama
 ---
 kicker_homepage_title: Pandita Wangsa Teknologi
 ---
