@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block title %}{{ this.title }}{% endblock %}
-
+<meta property="og:image" content="{{ this.first_image_link|asseturl }}">
 {% block body %}
 
   <section class="container my-md-5 p-4 pt-md-5 py-0 text-center">
@@ -86,11 +86,11 @@
       </a>
     </div>
     <div class="d-flex gap-4 justify-content-center mb-5">
-      <a class="btn btn-lg btn-success d-inline-flex gap-1" href="{{ this.whatsapp_link|asseturl }}" target="_blank">
+      <a class="btn btn-lg btn-success d-inline-flex gap-1" href="{{ this.whatsapp_link }}" target="_blank">
         <i class="bi bi-whatsapp me-2"></i>
         <span>{{ this.whatsapp_title }}</span>
       </a>
-      <a class="btn btn-lg btn-dark d-inline-flex gap-1" href="{{ this.phone_link|asseturl }}" target="_blank">
+      <a class="btn btn-lg btn-dark d-inline-flex gap-1" href="{{ this.phone_link }}" target="_blank">
         <i class="bi bi-telephone me-2"></i>
         <span>{{ this.phone_title }}</span>
       </a>

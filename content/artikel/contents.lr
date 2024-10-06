@@ -1,3 +1,9 @@
 _model: blog
 ---
+author: Admin
+---
+description: Hello.
+---
+first_image_link:
+---
 title: Blog
