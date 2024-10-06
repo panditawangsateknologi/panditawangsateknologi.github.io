@@ -1,6 +1,17 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  <h2>{{ this.title }}</h2>
-  {{ this.body }}
+<div class="container p-4">
+  <div class="col-lg-8 m-auto">
+    <article class="py-3">
+      <header class="mb-4">
+        <h2 class="display-6 mb-3">{{ this.title }}</h2>
+        <p class="lead mb-4">{{ this.lead }}</p>
+      </header>
+      <div class="mb-4">
+        {{ this.body }}
+      </div>
+    </article>
+  </div>
+</div>
 {% endblock %}

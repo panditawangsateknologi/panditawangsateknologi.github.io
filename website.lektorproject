@@ -1,7 +1,7 @@
 [project]
 name = Pandita Wangsa Teknologi
 url = https://panditawangsateknologi.biz.id/
-url_style = external
+url_style = relative
 
 [servers.ghpages]
 enabled = yes
