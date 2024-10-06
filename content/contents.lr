@@ -42,9 +42,11 @@ figcaption_title: Jual Accu/Aki Bekas Anda kepada Kami
 ---
 figcaption_body:
 
-Kami berkenan terima dan membeli baterai/accu/aki bekas segala kondisi dengan harga bersaing dengan kompetitor. Kami dapat menjemput ke lokasi/rumah/kantor Anda. Silakan hubungi WhatApps kami untuk kerjasama.
-
-Selain itu, kami memiliki beberapa layanan lain, seperti berikut di bawah ini.
+Kami berkenan terima dan membeli baterai/accu/aki bekas segala kondisi dengan harga bersaing dengan kompetitor. Kami dapat menjemput ke lokasi/rumah/kantor Anda. Silakan unduh/pindai dan simpan QR Code VCF kami untuk kerjasama.
+---
+vcf_qrcode_text: QR Code VCF (Pindah untuk menyimpan dan/atau klik untuk mengunduh)
+---
+vcf_qrcode_link: /static/pwt.vcf
 ---
 first_service_title: Pengadaan & Instalasi
 ---

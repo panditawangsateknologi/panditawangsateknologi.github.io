@@ -50,6 +50,14 @@
     <div class="col-lg-7 mx-auto">
       <div class="lead mb-5">{{ this.figcaption_body }}</div>
     </div>
+    <div class="d-flex gap-4 justify-content-center mb-5">
+      <a class="d-inline-flex gap-1" href="{{ this.vcf_qrcode_link|url }}" target="_blank">
+        <figure>
+          <img width="auto" alt="{{ this.vcf_qrcode_text }}" class="d-block img-fluid mx-auto my-4 rounded shadow" src="{{ '/static/pwt.svg'|asseturl }}"/>
+          <figcaption>{{ this.vcf_qrcode_text }}</figcaption>
+        </figure>
+      </a>
+    </div>
   </section>
   <section class="container my-md-5 p-4 py-md-0">
     <div class="gx-5 row">
