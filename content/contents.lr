@@ -12,7 +12,7 @@ lead_homepage_body: <strong>Pandita Wangsa Teknologi</strong> adalah perusahaan 
 ---
 whatsapp_title: WhatsApp
 ---
-whatsapp_link: http://wa.me/628157677177
+whatsapp_link: https://wa.me/628157677177?text=https%3A%2F%2Fpanditawangsateknologi.biz.id%2F%0A%0AHalo,%20saya%20ingin%20menawarkan%20barang%20kepada%20Anda
 ---
 phone_title: Telepon
 ---
@@ -26,11 +26,11 @@ second_image_link: /static/barang-bekas-1.jpg
 ---
 second_image_alt: Kami membeli limbah elektronik kantor.
 ---
-third_image_link: static/computer-1.jpg
+third_image_link: /static/rongsok-1.jpg
 ---
 third_image_alt: Kami membeli limbah elektronik kantor.
 ---
-fourth_image_link: /static/electric-1.jpg
+fourth_image_link: /static/battery-1.jpg
 ---
 fourth_image_alt: Kami membeli limbah elektronik kantor.
 ---
